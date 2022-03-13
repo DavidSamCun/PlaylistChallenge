@@ -30,13 +30,13 @@ public class MusicTest {
     }
 
     @Test
-    public void selectionTest3(){ //Forward test
+    public void selectionTest3(){
 
         String[] playlist = {"wheniseeyouagain","borntorun","nothingelsematters","test", "cecelia"};
         Music music = new Music(playlist);
         Integer startingIndex = 1;
         String selection = "cecelia";
-        Integer expected = 3;
+        Integer expected = 2;
         Integer actual = music.selection(startingIndex, selection);
         Assert.assertEquals(expected, actual);
     }

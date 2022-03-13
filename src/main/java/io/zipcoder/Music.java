@@ -31,7 +31,6 @@ public class Music {
             }
             forward++;
         }
-        System.out.println(forward);
 
         return forward;
     }
@@ -45,8 +44,6 @@ public class Music {
             }
             backward++;
         }
-        System.out.println(backward);
-
 
         return backward;
     }
