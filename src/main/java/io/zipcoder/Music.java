@@ -19,24 +19,17 @@ public class Music {
     }
 
     public Integer forwardScan(Integer startIndex, String selection){
-
-        int spot = startIndex;  //Go forward
         int forward = 0;    //forward count
-        int backward = 0;   //backward count
-        int selectSpot = 0;
-
         for(int i = startIndex; !playList[i].equals(selection); i ++){
             if (i == playList.length -1){
                 i = -1;
             }
             forward++;
         }
-
         return forward;
     }
 
     public Integer backwardScan(Integer startIndex, String selection){
-
         int backward = 0;
         for(int i = startIndex; !playList[i].equals(selection); i --){
             if (i == 0){
